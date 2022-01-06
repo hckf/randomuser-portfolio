@@ -1,0 +1,12 @@
+.header {
+  align-items: center;
+  background-color: grey;
+  display: flex;
+  height: 80px;
+  justify-content: flex-start;
+}
+
+.header-text {
+  align-items: center;
+  margin: 0 auto;
+}

@@ -1,0 +1,15 @@
+.article-card {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #0a100d;
+  border-radius: 4px;
+  box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  height: 16rem;
+  margin: 1rem 1rem;
+  position: relative;
+  text-align: center;
+  width: 14rem;
+  z-index: -1;
+}
