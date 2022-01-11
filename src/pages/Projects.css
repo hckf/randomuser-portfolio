@@ -1,0 +1,20 @@
+.project-data {
+  margin: 0 auto;
+  padding: 0;
+}
+.project-grid {
+  align-items: center;
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-rows: auto 300px;
+  margin: 1em auto;
+  width: 800px;
+}
+
+.project-page-description {
+  font-size: 24px;
+  font-style: italic;
+  margin: 1em auto 0;
+  text-align: center;
+}

@@ -3,6 +3,7 @@ import React from "react";
 //Icons
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { FaFacebook, FaHome, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { IoIosContact } from "react-icons/io";
 import { ImBubble } from "react-icons/im";
 import { SiAboutdotme } from "react-icons/si";
 
@@ -35,6 +36,13 @@ export const SidebarLinks = [
     icon: <SiAboutdotme />,
     cName: "sidebar-text",
   },
+  {
+    id: 5,
+    text: "Contact",
+    path: "/contact",
+    icon: <IoIosContact />,
+    cName: "sidebar-text",
+  },
 ];
 
 export const SidebarSocials = [
@@ -43,20 +51,20 @@ export const SidebarSocials = [
     name: "Facebook",
     url: "https://www.facebook.com/",
     icon: <FaFacebook />,
-    cName: "sidebar-text",
+    cName: "socials-icon",
   },
   {
     id: 2,
     name: "Twitter",
     url: "https://www.twitter.com",
     icon: <FaTwitter />,
-    cName: "sidebar-text",
+    cName: "socials-icon",
   },
   {
     id: 3,
     name: "LinkedIn",
     url: "https://uk.linkedin.com/",
     icon: <FaLinkedin />,
-    cName: "sidebar-text",
+    cName: "socials-icon",
   },
 ];

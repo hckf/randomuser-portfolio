@@ -1,0 +1,31 @@
+.about-paragraph {
+  margin: 0.5rem 0;
+}
+
+.about-subheader {
+  border-bottom: 2px solid rgb(60, 60, 60);
+  margin: 1rem;
+  padding-bottom: 1rem;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+  max-width: 500px;
+  text-align: justify;
+  width: 330px;
+}
+
+.skills-list {
+  align-items: center;
+  display: grid;
+  gap: 0px 10px;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  justify-content: center;
+  /* list-style-type: none; */
+}
+
+.user-text {
+  margin: 0;
+}

@@ -1,5 +1,8 @@
 import React from "react";
+
+// Styles
 import "./Header.css";
+
 export default function Header({ title }) {
   return (
     <div className="header">

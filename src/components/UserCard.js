@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 
 import { Context } from "../Context";
 
@@ -20,14 +20,6 @@ export default function UserCard({ loading }) {
               className="card-picture"
               alt="A picture of a person."
             />
-            <div className="card-text">
-              <p>
-                Name: {user.name.first} {user.name.last}
-              </p>
-
-              <p>Email: {user.email}</p>
-              <p>Phone: {user.cell}</p>
-            </div>
           </div>
         </div>
       )}

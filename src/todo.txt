@@ -1,0 +1,9 @@
+
+Blog.js
+- Initially implement the same modal system as the Projects page. It would probably be better to re-render the article itself as its own page.
+
+Footer.js
+- Fix footer positioning -> needs to be situated at the bottom of the page, not fixed to the bottom of the viewport.
+
+Projects.js
+- Center project grid - justify-items/content doesn't appear to center appropriately, find out why CSS grid is doing this.

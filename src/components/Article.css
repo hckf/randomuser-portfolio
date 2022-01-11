@@ -1,15 +1,52 @@
 .article-card {
   align-items: center;
-  background-color: #fff;
+  background-color: white;
   border: 1px solid #0a100d;
   border-radius: 4px;
   box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
-  height: 16rem;
-  margin: 1rem 1rem;
+  flex-direction: row;
+  height: 220px;
+  margin: 1rem;
   position: relative;
   text-align: center;
-  width: 14rem;
-  z-index: -1;
+  width: 600px;
+  z-index: 3;
+}
+
+.article-card:hover {
+  background-color: rgb(240, 240, 240);
+  transition: 300ms;
+}
+
+.article-description {
+  color: #555753;
+  font-size: 16px;
+  font-weight: 700px;
+}
+
+.article-image {
+  margin: 20px;
+  width: 180px;
+}
+
+.article-image-wrapper {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: flex-end;
+  width: 220px;
+}
+
+.article-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  width: 100%;
+}
+
+.article-title {
+  font-size: 24px;
+  font-weight: 700px;
 }

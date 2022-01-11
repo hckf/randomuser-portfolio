@@ -1,45 +1,35 @@
 import React from "react";
+import { useState } from "react/cjs/react.development";
 
-import Modal from "../components/Modal";
-import NewProjectForm from "../components/NewProjectForm";
-import ProjectList from "../components/ProjectList";
+import Modal from "../components/ProjectModal";
+import Project from "../components/Project";
+import { ProjectData } from "../data/ProjectData";
 
-import { useState } from "react";
+import "./Projects.css";
 
 export default function Projects() {
-  const [projects, setProjects] = useState([]);
-  const [showModal, setShowModal] = useState(false);
-  const [showProjects, setShowProjects] = useState(true);
-
-  const addProject = (newProject) => {
-    setProjects((prevProjects) => {
-      return [...prevProjects, newProject];
-    });
-    setShowModal(false);
-  };
-
-  const handleClick = (id) => {
-    setProjects((prevProjects) => {
-      console.log(projects);
-      return setProjects(prevProjects.filter((project) => id !== project.id));
-    });
-  };
   return (
-    <div className="projects-wrapper">
-      <div className="projects">
-        Projects
-        <div>
-          <button onClick={() => setShowModal(true)}>Add New Project</button>
-        </div>
-        {showProjects && (
-          <ProjectList deleteProject={handleClick} projects={projects} />
-        )}
-        {showModal && (
-          <Modal>
-            <NewProjectForm addProject={addProject} />
-          </Modal>
-        )}
+    <>
+      <div className="project-page-description">
+        Infrequent writing on various topics tangentially related to my work.
       </div>
-    </div>
+
+      <div className="project-grid">
+        {ProjectData.map((item) => {
+          return (
+            <Project className={item.cName} key={item.id} projectInfo={item} />
+          );
+        })}
+      </div>
+
+      {/* OLD */}
+      {/* <div className="project-grid">
+        {ProjectData.map((item) => {
+          return (
+            <Project className={item.cName} key={item.id} projectInfo={item} />
+          );
+        })}
+      </div> */}
+    </>
   );
 }
